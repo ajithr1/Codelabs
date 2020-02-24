@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    tools:context=".SimpleFragment">
+    tools:context=".Advanced.SimpleFragment">
 
     <TextView
         android:id="@+id/fragment_header"
@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         style="@style/TextAppearance.AppCompat.Medium"
         android:padding="4dp"
-        android:text="@string/hello_blank_fragment" />
+        android:text="@string/hello_blank" />
 
     <RadioGroup
         android:id="@+id/radio_group"
@@ -24,13 +24,13 @@
             android:id="@+id/radio_button_yes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="YES"/>
+            android:text="@string/yes"/>
 
         <RadioButton
             android:id="@+id/radio_button_no"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="NO"/>
+            android:text="@string/no"/>
     </RadioGroup>
 
 </LinearLayout>

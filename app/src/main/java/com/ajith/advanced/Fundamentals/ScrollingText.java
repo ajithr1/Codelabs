@@ -1,14 +1,16 @@
-package com.ajith.advanced;
+package com.ajith.advanced.Fundamentals;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Fragment extends AppCompatActivity {
+import com.ajith.advanced.R;
+
+public class ScrollingText extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fragment);
+        setContentView(R.layout.activity_scrolling_text);
     }
 }

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.ajith.advanced">
 
     <application
@@ -8,8 +9,24 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".Fragment"></activity>
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".SongDetailActivity"></activity>
+        <activity
+            android:name=".Advanced.FragmentCommunicate"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Fundamentals.ScrollingText"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Fundamentals.HelloToast"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Fundamentals.HelloWorld"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Advanced.Fragment"
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
