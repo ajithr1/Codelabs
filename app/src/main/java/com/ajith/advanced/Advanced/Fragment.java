@@ -7,10 +7,11 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.ajith.advanced.R;
 
-public class Fragment extends AppCompatActivity {
+public class Fragment extends AppCompatActivity implements SimpleFragment.OnFragmentInteractionListener {
 
     private boolean isDisplayed = false;
     private Button button;
@@ -55,5 +56,10 @@ public class Fragment extends AppCompatActivity {
 
             button.setText("open");
         }
+    }
+
+    @Override
+    public void onRadioButtonChoice(int choice) {
+        Toast.makeText(this, String.valueOf(choice), Toast.LENGTH_SHORT).show();
     }
 }

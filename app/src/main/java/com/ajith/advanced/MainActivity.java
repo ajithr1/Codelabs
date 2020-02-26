@@ -14,6 +14,8 @@ import com.ajith.advanced.Fundamentals.ScrollingText;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final String TAG = "ajju";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

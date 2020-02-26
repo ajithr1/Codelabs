@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".SongDetailActivity"></activity>
+        <activity android:name=".Advanced.SongDetailActivity"></activity>
         <activity
             android:name=".Advanced.FragmentCommunicate"
             android:parentActivityName=".MainActivity" />
