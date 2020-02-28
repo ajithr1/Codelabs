@@ -165,14 +165,13 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
-
-
             <Button
                 android:id="@+id/SensorOrientation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="3.2: Sensor-based orientation"
                 android:layout_margin="8dp"
+                android:onClick="tilt"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/widget1"/>

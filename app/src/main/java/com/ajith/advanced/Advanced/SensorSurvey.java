@@ -18,8 +18,8 @@ public class SensorSurvey extends AppCompatActivity implements SensorEventListen
     private SensorManager sensorManager;
 
     // Individual light and proximity sensors.
-    private Sensor mSensorProximity;
-    private Sensor mSensorLight;
+    private Sensor proximitySensor;
+    private Sensor lightSensor;
 
     // TextViews to display current sensor values
     private TextView mTextSensorLight;
@@ -36,9 +36,6 @@ public class SensorSurvey extends AppCompatActivity implements SensorEventListen
         sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
 
         assert sensorManager != null;
-        mSensorProximity = sensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
-        mSensorLight = sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
-
         List<Sensor> sensorList = sensorManager.getSensorList(Sensor.TYPE_ALL);
 
         StringBuilder sensorText = new StringBuilder();
@@ -46,15 +43,19 @@ public class SensorSurvey extends AppCompatActivity implements SensorEventListen
         for (Sensor currentSensor : sensorList) {
             sensorText.append(currentSensor.getName()).append(System.getProperty("line.separator"));
         }
-        TextView sensorTextView = (TextView) findViewById(R.id.sensor_list);
+        TextView sensorTextView = findViewById(R.id.sensor_list);
         sensorTextView.setText(sensorText);
+
+        assert sensorManager != null;
+        proximitySensor = sensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
+        lightSensor = sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
 
         String sensor_error = getResources().getString(R.string.error_no_sensor);
 
-        if (mSensorLight == null) {
+        if (lightSensor == null) {
             mTextSensorLight.setText(sensor_error);
         }
-        if (mSensorProximity == null) {
+        if (proximitySensor == null) {
             mTextSensorProximity.setText(sensor_error);
         }
 
@@ -64,11 +65,11 @@ public class SensorSurvey extends AppCompatActivity implements SensorEventListen
     protected void onStart() {
         super.onStart();
 
-        if (mSensorProximity != null) {
-            sensorManager.registerListener(this, mSensorProximity, SensorManager.SENSOR_DELAY_NORMAL);
+        if (proximitySensor != null) {
+            sensorManager.registerListener(this, proximitySensor, SensorManager.SENSOR_DELAY_NORMAL);
         }
-        if (mSensorLight != null) {
-            sensorManager.registerListener(this, mSensorLight, SensorManager.SENSOR_DELAY_NORMAL);
+        if (lightSensor != null) {
+            sensorManager.registerListener(this, lightSensor, SensorManager.SENSOR_DELAY_NORMAL);
         }
     }
 
@@ -95,14 +96,12 @@ public class SensorSurvey extends AppCompatActivity implements SensorEventListen
             case Sensor.TYPE_LIGHT:
                 // Set the light sensor text view to the light sensor string
                 // from the resources, with the placeholder filled in.
-                mTextSensorLight.setText(getResources().getString(
-                        R.string.label_light, currentValue));
+                mTextSensorLight.setText(getResources().getString(R.string.label_light, currentValue));
                 break;
             case Sensor.TYPE_PROXIMITY:
                 // Set the proximity sensor text view to the light sensor
                 // string from the resources, with the placeholder filled in.
-                mTextSensorProximity.setText(getResources().getString(
-                        R.string.label_proximity, currentValue));
+                mTextSensorProximity.setText(getResources().getString(R.string.label_proximity, currentValue));
                 break;
             default:
                 // do nothing
