@@ -1,25 +1,21 @@
 package com.ajith.advanced.Advanced;
 
+import android.util.Log;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class SongUtils {
+import static com.ajith.advanced.MainActivity.TAG;
 
-    // An ArrayList of Songs
-    public static final List<Song> SONG_ITEMS = new ArrayList<>();
+class SongUtils {
 
-    // The ID for the index into song titles.
-    public static final String SONG_ID_KEY = "item_id";
-
-    // The number of songs.
+    static final List<Song> SONG_ITEMS = new ArrayList<>();
+    static final String SONG_ID_KEY = "item_id";
     private static final int COUNT = 7;
 
-    /**
-     * A Song item represents a song title, and song details.
-     */
-    public static class Song {
-        public final String song_title;
-        public final String details;
+    static class Song {
+        final String song_title;
+        final String details;
 
         private Song(String content, String details) {
             this.song_title = content;
@@ -27,17 +23,12 @@ public class SongUtils {
         }
     }
 
-    /**
-     * Add an item to the array.
-     *
-     * @param item Each song
-     */
     private static void addItem(Song item) {
         SONG_ITEMS.add(item);
     }
 
     static {
-        // Fill the array with songs.
+        Log.d(TAG, "static initializer: ");
         for (int i = 0; i < COUNT; i++) {
             addItem(createSongAtPosition(i));
         }

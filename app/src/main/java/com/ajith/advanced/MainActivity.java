@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.ajith.advanced.Advanced.Fragment;
 import com.ajith.advanced.Advanced.FragmentCommunicate;
+import com.ajith.advanced.Advanced.SensorSurvey;
 import com.ajith.advanced.Fundamentals.HelloToast;
 import com.ajith.advanced.Fundamentals.HelloWorld;
 import com.ajith.advanced.Fundamentals.ScrollingText;
@@ -40,5 +41,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void fragmentCommunication(View view) {
         startActivity(new Intent(this, FragmentCommunicate.class));
+    }
+
+    public void sensorSurvey(View view) {
+        startActivity(new Intent(this, SensorSurvey.class));
     }
 }

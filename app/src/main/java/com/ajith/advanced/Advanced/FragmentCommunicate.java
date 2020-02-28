@@ -33,9 +33,6 @@ public class FragmentCommunicate extends AppCompatActivity {
         recyclerView.setAdapter(new SimpleItemRecyclerViewAdapter(SongUtils.SONG_ITEMS));
     }
 
-    public void fragmentOpen(View view) {
-    }
-
     private static class SimpleItemRecyclerViewAdapter extends RecyclerView.Adapter<ViewHolder> {
 
         private final List<SongUtils.Song> mValues;
