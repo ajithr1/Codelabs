@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.ajith.advanced" >
+    package="com.ajith.advanced">
 
     <application
         android:allowBackup="true"
@@ -10,12 +10,16 @@
         android:roundIcon="@mipmap/ic_laun_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:ignore="GoogleAppIndexingWarning" >
-        <activity android:name=".Advanced.TiltSpot" >
-        </activity>
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".HelpActivity"></activity>
+        <activity
+            android:name=".LocaleText"
+            android:label="@string/title_activity_locale_text"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Advanced.TiltSpot" />
         <activity android:name=".Advanced.SensorSurvey" />
 
-        <receiver android:name=".NewAppWidget" >
+        <receiver android:name=".NewAppWidget">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
@@ -42,7 +46,7 @@
         <activity
             android:name=".Advanced.Fragment"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".MainActivity" >
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

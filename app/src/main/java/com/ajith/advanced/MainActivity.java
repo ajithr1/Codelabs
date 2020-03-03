@@ -1,10 +1,10 @@
 package com.ajith.advanced;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.ajith.advanced.Advanced.Fragment;
 import com.ajith.advanced.Advanced.FragmentCommunicate;
@@ -50,5 +50,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void tilt(View view) {
         startActivity(new Intent(this, TiltSpot.class));
+    }
+
+    public void addLanguage(View view) {
+        startActivity(new Intent(this, LocaleText.class));
     }
 }

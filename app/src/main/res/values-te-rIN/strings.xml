@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Code Labs</string>
+
+    <string name="action_help" translatable="false">సహాయం</string>
+    <string name="help_text">మీకు సహాయం అవసరమైతే, మా సహాయ విభాగాన్ని సంప్రదించండి.</string>
+    <string name="dial_log_message">ACTION_DIAL ఉద్దేశం కోసం అనువర్తనాన్ని పరిష్కరించలేరు.</string>
+    <string name="description" translatable="false">నౌగాట్ చక్కెర లేదా తేనె, కాల్చిన గింజలు (బాదం, అక్రోట్లను, పిస్తా, హాజెల్ నట్స్ మరియు మకాడమియా గింజలు సాధారణం), కొరడాతో చేసిన గుడ్డులోని తెల్లసొన మరియు కొన్నిసార్లు తరిగిన క్యాండీ పండ్లతో చేసిన మిఠాయిల కుటుంబం. ఇది వివిధ రకాల మిఠాయి బార్లు మరియు చాక్లెట్లలో ఉపయోగించబడుతుంది.</string>
+    <string name="nougat" translatable="false">నౌగాట్ కాండీ ప్యాకేజీ</string>
+    <string name="language" translatable="false">భాషా</string>
+</resources>

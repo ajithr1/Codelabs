@@ -1,60 +1,109 @@
 <resources>
     <string name="app_name">Code Labs</string>
 
-    <string name="title1">Cry for a Shadow</string>
-    <string name="article1">Many a Beatle fanatic started down the outtake
+    <string name="title1" translatable="false">Cry for a Shadow</string>
+    <string name="article1" translatable="false">Many a Beatle fanatic started down the outtake
         road,
         like I did, with a first listen to this song. Originally titled “Beatle Bop” and recorded in a single session that yielded four songs (the other three featured Tony Sheridan with the Beatles as a backing band), “Cry for a Shadow” is an instrumental written by Lennon and Harrison, which makes it unique to this day. John Lennon plays rhythm guitar, George Harrison plays lead guitar, Paul McCartney plays bass, and Pete Best plays drums. The sessions were produced by Bert Kaempfert in Hamburg, Germany, during the Beatles’ second visit from April through July of 1961 to play in the Reeperbahn-section clubs.</string>
-    <string name="title2">My Bonnie - Ain’t She Sweet</string>
-    <string name="article2">At the same session, the Beatles played on “My Bonnie” (the first-ever single with Beatles playing), as the backing band for English singer Tony Sheridan, originally a member of the Jets. The popularity of this single in Liverpool brought the Beatles to the attention of Brian Epstein, who worked in the NEMS record store and tried to meet demand for the disc. John Lennon then sings a fine “Ain’t She Sweet” (his first-ever released vocal).</string>
+    <string name="title2" translatable="false">My Bonnie - Ain’t She Sweet</string>
+    <string name="article2" translatable="false">At the same session, the Beatles played on “My Bonnie” (the first-ever single with Beatles playing), as the backing band for English singer Tony Sheridan, originally a member of the Jets. The popularity of this single in Liverpool brought the Beatles to the attention of Brian Epstein, who worked in the NEMS record store and tried to meet demand for the disc. John Lennon then sings a fine “Ain’t She Sweet” (his first-ever released vocal).</string>
 
     <!-- Text for the fragment. -->
-    <string name="yes">Yes</string>
-    <string name="no">No</string>
-    <string name="yes_message">ARTICLE: Like</string>
-    <string name="no_message">ARTICLE: Thanks</string>
-    <string name="question_article">LIKE THE ARTICLE?</string>
+    <string name="yes" translatable="false">Yes</string>
+    <string name="no" translatable="false">No</string>
+    <string name="yes_message" translatable="false">ARTICLE: Like</string>
+    <string name="no_message" translatable="false">ARTICLE: Thanks</string>
+    <string name="question_article" translatable="false">LIKE THE ARTICLE?</string>
 
     <!-- Text for the button in FragmentExample2. -->
-    <string name="open">Open</string>
-    <string name="close">Close</string>
+    <string name="open" translatable="false">Open</string>
+    <string name="close" translatable="false">Close</string>
 
     <!-- Text for the exception message in FragmentCommunicate. -->
-    <string name="exception_message">must implement OnFragmentInteractionListener</string>
+    <string name="exception_message" translatable="false">must implement OnFragmentInteractionListener</string>
 
-    <string name="hello_blank">LIKE THE ARTICLE?</string>
+    <string name="hello_blank" translatable="false">LIKE THE ARTICLE?</string>
 
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
 
-    <string name="title_song_detail">Song Detail</string>
-    <string name="article_title">Beatles Anthology Vol. 1</string>
-    <string name="article_subtitle">Behind That Locked Door: Beatles Rarities!</string>
-    <string name="appwidget_text">EXAMPLE</string>
-    <string name="add_widget">Add widget</string>
+    <string name="title_song_detail" translatable="false">Song Detail</string>
+    <string name="article_title" translatable="false">Beatles Anthology Vol. 1</string>
+    <string name="article_subtitle" translatable="false">Behind That Locked Door: Beatles Rarities!</string>
+    <string name="appwidget_text" translatable="false">EXAMPLE</string>
+    <string name="add_widget" translatable="false">Add widget</string>
 
-    <string name="activity_text">All the functionality for this app is in
+    <string name="activity_text" translatable="false">All the functionality for this app is in
         the app widget.</string>
 
     <!-- Heading for the app widget ID panel. -->
-    <string name="widget_id_label">Widget ID</string>
+    <string name="widget_id_label" translatable="false">Widget ID</string>
 
     <!-- Heading for the updated panel. -->
-    <string name="widget_update_label">Last updated</string>
+    <string name="widget_update_label" translatable="false">Last updated</string>
 
     <!-- Button label for the update button. -->
-    <string name="widget_button_update">Update now</string>
+    <string name="widget_button_update" translatable="false">Update now</string>
 
     <!-- Format string for the date & count text view -->
-    <string name="date_count_format">%1$d @%2$s</string>
+    <string name="date_count_format" translatable="false">%1$d @%2$s</string>
 
-    <string name="error_no_sensor">No sensor</string>
+    <string name="error_no_sensor" translatable="false">No sensor</string>
 
-    <string name="label_proximity">Proximity Sensor: %1$.2f</string>
-    <string name="label_light">Light Sensor: %1$.2f</string>
+    <string name="label_proximity" translatable="false">Proximity Sensor: %1$.2f</string>
+    <string name="label_light" translatable="false">Light Sensor: %1$.2f</string>
 
-    <string name="label_azimuth_string">Azimuth:</string>
-    <string name="label_pitch_string">Pitch:</string>
-    <string name="label_roll_string">Roll:</string>
+    <string name="label_azimuth_string" translatable="false">Azimuth:</string>
+    <string name="label_pitch_string" translatable="false">Pitch:</string>
+    <string name="label_roll_string" translatable="false">Roll:</string>
 
-    <string name="value_format">%1$.2f</string>
+    <string name="value_format" translatable="false">%1$.2f</string>
+    <string name="title_activity_locale_text" translatable="false">LocaleText</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label" translatable="false">First Fragment</string>
+    <string name="second_fragment_label" translatable="false">Second Fragment</string>
+    <string name="next" translatable="false">Next</string>
+    <string name="previous" translatable="false">Previous</string>
+
+    <string name="hello_first_fragment" translatable="false">Hello first fragment</string>
+    <string name="hello_second_fragment" translatable="false">Hello second fragment. Arg: %1$s</string>
+
+    <!-- The Help option in the options menu, no more than 30 chars. -->
+    <string name="action_help" translatable="false">Help</string>
+
+    <!-- The description includes a parenthetical expression.  -->
+    <string name="description" translatable="false">Nougat is a family of confections made with sugar or honey, roasted nuts (almonds, walnuts, pistachios, hazelnuts, and macadamia nuts are common), whipped egg whites, and sometimes chopped candied fruit. It is used in a variety of candy bars and chocolates. </string>
+
+    <!-- The product name includes "Package" to define a pack.  -->
+    <string name="nougat" translatable="false">Nougat Candy Package</string>
+
+    <!-- Do not translate.  -->
+    <string name="support_phone" translatable="false">+14155551212</string>
+
+    <!-- Support Department should be capitalized.  -->
+    <string name="help_text">If you need help, contact our Support Department.</string>
+
+    <!-- Do not translate.  -->
+    <string name="dial_log_message">Can\'t resolve app for ACTION_DIAL Intent.</string>
+    <string name="language">Language</string>
+
+    <!-- The expiration date for the package, includes a colon.  -->
+    <string name="expiration_date" translatable="false">Expiration Date:</string>
+
+    <!-- Do not translate.  -->
+    <string name="date" translatable="false">01/01/2017</string>
+
+    <!-- The quantity to be entered, includes a colon.  -->
+    <string name="quantity_label" translatable="false">Quantity:</string>
+
+    <!-- The hint that tells the user to enter a number.  -->
+    <string name="enter_a_number" translatable="false">Enter a number</string>
+
+    <!-- The price for the package, includes a colon.  -->
+    <string name="price_label" translatable="false">Price per package:</string>
+
+    <!-- The total amount to pay for the package, includes a colon.  -->
+    <string name="total_to_pay" translatable="false">Total to pay:</string>
+
+    <!-- The exchange rate based on $1.00 U.S. dollars.  -->
+    <string name="enter_number" translatable="false">Enter a number</string>
 </resources>

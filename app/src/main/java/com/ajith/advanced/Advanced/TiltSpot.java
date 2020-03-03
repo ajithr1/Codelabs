@@ -1,9 +1,6 @@
 package com.ajith.advanced.Advanced;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
-import android.content.pm.ActivityInfo;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -14,6 +11,8 @@ import android.view.Surface;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.ajith.advanced.R;
 
@@ -107,7 +106,7 @@ public class TiltSpot extends AppCompatActivity implements SensorEventListener {
                 break;
             case Surface.ROTATION_90:
                 SensorManager.remapCoordinateSystem(rotationMatrix,
-                        SensorManager.AXIS_Y, SensorManager.AXIS_MINUS_X,
+                        SensorManager.AXIS_X, SensorManager.AXIS_MINUS_Y,
                         rotationMatrixAdjusted);
                 break;
             case Surface.ROTATION_180:
@@ -117,7 +116,7 @@ public class TiltSpot extends AppCompatActivity implements SensorEventListener {
                 break;
             case Surface.ROTATION_270:
                 SensorManager.remapCoordinateSystem(rotationMatrix,
-                        SensorManager.AXIS_MINUS_Y, SensorManager.AXIS_X,
+                        SensorManager.AXIS_MINUS_X, SensorManager.AXIS_Y,
                         rotationMatrixAdjusted);
                 break;
         }
