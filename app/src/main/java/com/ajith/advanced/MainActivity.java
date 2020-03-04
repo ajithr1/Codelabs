@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.ajith.advanced.Advanced.Fragment;
 import com.ajith.advanced.Advanced.FragmentCommunicate;
+import com.ajith.advanced.Advanced.LocaleText;
 import com.ajith.advanced.Advanced.SensorSurvey;
 import com.ajith.advanced.Advanced.TiltSpot;
 import com.ajith.advanced.Fundamentals.HelloToast;
@@ -54,5 +55,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void addLanguage(View view) {
         startActivity(new Intent(this, LocaleText.class));
+    }
+
+    public void location(View view) {
+    }
+
+    public void places(View view) {
+    }
+
+    public void maps(View view) {
     }
 }

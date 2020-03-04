@@ -1,4 +1,4 @@
-package com.ajith.advanced;
+package com.ajith.advanced.Advanced;
 
 import android.content.Context;
 import android.content.Intent;
@@ -17,6 +17,8 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import com.ajith.advanced.MainActivity;
+import com.ajith.advanced.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.text.DateFormat;

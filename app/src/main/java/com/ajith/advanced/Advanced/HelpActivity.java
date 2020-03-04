@@ -1,4 +1,4 @@
-package com.ajith.advanced;
+package com.ajith.advanced.Advanced;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.ajith.advanced.R;
 
 public class HelpActivity extends AppCompatActivity {
 

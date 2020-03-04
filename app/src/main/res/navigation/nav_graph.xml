@@ -3,11 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/FirstFragment"
+    tools:ignore="UnusedNavigation">
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.ajith.advanced.FirstFragment"
+        android:name="com.ajith.advanced.Advanced.FirstFragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_first">
 
@@ -17,7 +18,7 @@
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.ajith.advanced.SecondFragment"
+        android:name="com.ajith.advanced.Advanced.SecondFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_second">
 
